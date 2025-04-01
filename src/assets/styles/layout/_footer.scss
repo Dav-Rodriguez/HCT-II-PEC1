@@ -1,0 +1,34 @@
+// layout/_footer.scss 
+
+@import '../abstracts/variables';
+
+.footer {
+    padding: 2rem;
+    color: $color-white;
+    text-align: center;
+    background-color: $color-dark;
+  
+    &__text {
+      margin-top: 1rem;
+      font-size: $font-size-sm;
+      color: $color-white;
+    }
+  
+    &__socials {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+  
+      &-item {
+        margin: 0 0.5rem;
+        font-size: $font-size-lg;
+        color: $color-white;
+        cursor: pointer;
+        
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+  

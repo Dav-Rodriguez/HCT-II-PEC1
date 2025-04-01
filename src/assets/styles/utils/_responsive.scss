@@ -1,0 +1,41 @@
+// utils/_responsive.scss 
+
+@import '../abstracts/variables';
+@import '../base/base';
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+
+    &__menu {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .ingredientes__galeria img,
+  .historia img,
+  .variaciones img {
+    width: 100%;
+    height: auto;
+  }
+
+  // Mejorar la responsividad de las secciones
+  section {
+    padding: 1.5rem;
+  }
+
+  .descripcion__text,
+  .preparacion__text {
+    font-size: $font-size-sm; // Reducir el tamaño de la fuente para pantallas pequeñas
+  }
+
+  .header__nav {
+    display: none; // Ocultar el menú en pantallas pequeñas si es necesario (por ejemplo, usar un ícono de menú para mostrarlo)
+  }
+}

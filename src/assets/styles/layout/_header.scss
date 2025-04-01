@@ -1,0 +1,62 @@
+// layout/_header.scss
+
+@import '../abstracts/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: $color-white;
+  background: $color-primary;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+  
+    @media (max-width: 768px) {
+      display: none; // Ocultar el menú en dispositivos pequeños
+    }
+
+    &-item {
+      font-size: $font-size-lg;
+    }
+
+    &-link {
+      font-weight: bold;
+      color: $color-white;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+// Estilos del logo
+.er-logo {
+  max-width: 150px;
+}
+  
+  .header__menu--mobile {
+    display: none;
+  
+    @media (max-width: 768px) {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  // Estilos para el menú desplegable cuando se activa el menú hamburguesa
+  .header__menu--active {
+    display: flex;
+    flex-direction: column;
+  }
+  

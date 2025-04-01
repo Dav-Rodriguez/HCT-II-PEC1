@@ -1,0 +1,26 @@
+// utils/_utilities.scss
+
+@import '../abstracts/variables';
+
+// Ocultar un elemento
+.utility-hidden {
+    display: none;
+  }
+  
+  // Centrar texto
+  .utility-text-center {
+    text-align: center;
+  }
+  
+  // Alinear contenido al centro vertical y horizontal
+  .utility-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // Establecer el fondo de color gris claro
+  .utility-bg-light-gray {
+    background-color: $color-gray-light;
+  }
+  

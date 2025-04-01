@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+
+/* Reseteo de márgenes y paddings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tipografía base */
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+/* Estilos para enlaces */
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-accent;
+    text-decoration: underline;
+  }
+}
+
+/* Estilos para listas */
+ul, ol {
+  list-style: none;
+}

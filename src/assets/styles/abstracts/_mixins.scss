@@ -1,0 +1,23 @@
+// abstracts/_mixins.scss  
+
+@import '../abstracts/variables';
+
+// Mixin para media queries
+@mixin media-query($max-width) {
+    @media (max-width: $max-width) {
+      @content;
+    }
+  }
+  
+  // Mixin para bordes redondeados
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+  
+  // Mixin para establecer un fondo gradiente
+  @mixin gradient-background($color1, $color2) {
+    background: linear-gradient(to right, $color1, $color2);
+  }
+  

@@ -1,0 +1,140 @@
+// pages/_sections.scss
+
+@import '../abstracts/variables';
+
+.main {
+    padding: 2rem 1rem;
+  
+    &__section {
+      max-width: 800px;
+      padding: 2rem 0;
+      margin: 0 auto;
+      
+      &-title {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-primary;
+        text-align: center;
+      }
+  
+      &-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: $color-text;
+        text-align: justify;
+      }
+  
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 1.5rem auto;
+        border-radius: 8px;
+      }
+    }
+  }
+  
+
+.descripcion {
+  text-align: center;
+
+  &__title {
+    font-size: $font-size-xl;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    font-size: $font-size-sm;
+    line-height: 1.6;
+  }
+}
+
+.ingredientes {
+  &__title {
+    font-size: $font-size-lg;
+    color: $color-primary;
+  }
+
+  &__list {
+    padding-left: 1rem;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 0.5rem 0;
+    font-size: $font-size-sm;
+    border-bottom: 1px solid $color-gray-light;
+  }
+
+  &__galeria {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  }
+}
+
+.preparacion {
+  &__title {
+    font-size: $font-size-lg;
+    color: $color-primary;
+  }
+
+  &__list {
+    padding-left: 1.5rem;
+    list-style: decimal;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+    font-size: $font-size-sm;
+  }
+}
+
+.historia {
+  text-align: center;
+
+  &__title {
+    font-size: $font-size-lg;
+    color: $color-primary;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    font-size: $font-size-sm;
+    line-height: 1.6;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+}
+
+.variaciones {
+  &__title {
+    font-size: $font-size-lg;
+    color: $color-primary;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    font-size: $font-size-sm;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+}
+
+
