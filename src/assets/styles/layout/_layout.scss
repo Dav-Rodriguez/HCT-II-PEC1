@@ -1,7 +1,8 @@
+// layout/_layout.scss
+
 @import '../abstracts/variables';
 
 
-///experimento fase 1/////
 * {
   box-sizing: border-box;
 }
@@ -19,17 +20,6 @@ body {
   background-color: $uoc-bg;
 }
 
-///experimento fase 1/////
-
-/*
-.uoc-container {
-  width: 100%;
-  max-width: 100%;
-  padding: 0 1rem;
-  margin: 0 auto;
-}*/
-
-/////experimento fase 2////
 .uoc-container {
   width: 90%; 
   max-width: 800px;
@@ -42,26 +32,24 @@ body {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-///experimento fase 2/////
-
 
 /* Estructura con Flexbox */
 .main-content {
   display: flex;
-  flex-direction: column; /* Columnas en pantallas grandes */
+  flex-direction: column; 
   gap: 3rem;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  width: 100%; 
   padding: 2rem 0;
 }
 
 .sidebar {
-  flex: 1; /* Ocupa la mitad del espacio disponible */
+  flex: 1; 
 }
 
 .main {
-  flex: 2; /* Ocupa más espacio que la barra lateral */
+  flex: 2; 
 }
 
 /* Secciones generales */

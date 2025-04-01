@@ -1,0 +1,7 @@
+// abstracts/_functions.scss
+
+@use "sass:color";
+
+@function darken-custom($color, $amount) {
+  @return color.adjust($color, $lightness: - $amount);
+}

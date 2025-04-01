@@ -47,7 +47,7 @@
 
   &__text {
     margin-top: 1rem;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
     line-height: 1.6;
   }
 }
@@ -65,7 +65,7 @@
 
   &__item {
     padding: 0.5rem 0;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
     border-bottom: 1px solid $color-gray-light;
   }
 
@@ -94,7 +94,7 @@
 
   &__item {
     margin-bottom: 1rem;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
   }
 }
 
@@ -108,7 +108,7 @@
 
   &__text {
     margin-top: 1rem;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
     line-height: 1.6;
   }
 
@@ -127,7 +127,7 @@
 
   &__text {
     margin-bottom: 1rem;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
   }
 
   img {

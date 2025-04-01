@@ -3,7 +3,7 @@
 @import '../abstracts/variables';
 @import '../base/base';
 
-@media (max-width: 768px) {
+@media (max-width: $mqMinWidth) {
   .header {
     flex-direction: column;
     text-align: center;

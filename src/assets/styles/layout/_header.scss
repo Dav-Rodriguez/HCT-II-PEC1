@@ -1,5 +1,6 @@
 // layout/_header.scss
 
+@import '../abstracts/functions';
 @import '../abstracts/variables';
 
 .header {
@@ -8,7 +9,7 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   color: $color-white;
-  background: $color-primary;
+  background: darken-custom($color-primary, 20%);
 
   &__nav {
     display: flex;

@@ -1,10 +1,10 @@
 // main.scss
 
+//Funciones propias
+@import 'abstracts/functions';
+
 // Dependencia FontAwesome
 @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
-
-
-
 
 // Variables y mixins globales
 @import 'abstracts/variables';
