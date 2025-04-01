@@ -20,7 +20,7 @@
     margin-top: 1rem;
     list-style: none;
   
-    @media (max-width: 768px) {
+    @media (max-width: $mqMinWidth) {
       display: none; // Ocultar el menú en dispositivos pequeños
     }
 
@@ -30,7 +30,7 @@
 
     &-link {
       font-weight: bold;
-      color: $color-white;
+      color: $color-accent;
       transition: color 0.3s ease-in-out;
 
       &:hover {
@@ -58,5 +58,18 @@
   .header__menu--active {
     display: flex;
     flex-direction: column;
+  }
+  
+
+/* estilso apr ala imagen del logo */
+  .header__logo-img {
+    max-width: 200px; 
+    height: auto;
+  }
+  
+  @media (max-width: $mqMinWidth) {
+    .header__logo-img {
+      max-width: 150px; 
+    }
   }
   

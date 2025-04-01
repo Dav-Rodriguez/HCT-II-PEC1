@@ -1,5 +1,11 @@
 // main.scss
 
+// Dependencia FontAwesome
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+
+
+
 // Variables y mixins globales
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
@@ -23,3 +29,7 @@
 // Utilidades y responsive
 @import 'utils/utilities';
 @import 'utils/responsive';
+
+
+
+

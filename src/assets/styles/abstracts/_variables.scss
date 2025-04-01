@@ -1,18 +1,23 @@
 // abstracts/_variables.scss
 
+@use "sass:color";
+
 // Variables de colores
-$color-primary: #2C3E50;  // Azul oscuro
-$color-secondary: #E67E22; // Naranja
+$color-primary: #fae9d4;  // Azul oscuro
+$color-secondary: #eda85a; // Naranja
 $color-background: #F9F9F9; // Fondo claro
 $color-text: #333; // Texto principal
 $color-accent: #D35400; // Naranja oscuro para acentos
 $color-white: #FFF;
 $color-dark: #333333;
 $color-gray-light: rgb(99, 99, 99);
+$uoc-bg: color.scale($color-secondary, $lightness: 70%);
 
 // Variables de tipografía
-$font-primary: 'Inter', sans-serif;
-$font-secondary: 'Merriweather', serif;
+$font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol";
+$font-secondary: "Georgia", "Times New Roman", serif;
 
 // Tamaños de texto
 $font-size-base: 16px;
@@ -20,3 +25,6 @@ $font-size-sm: 14px;
 $font-size-lg: 18px;
 $font-size-xl: 24px;
 $font-size-xxl: 32px;
+
+// Tamano para mobile
+$mqMinWidth: 480px;
